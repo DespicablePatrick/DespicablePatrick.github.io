@@ -101,6 +101,32 @@ else{sym.$("kikivoice")[0].pause();}});
 //Edge binding end
 Symbol.bindTimelineAction(compId,symbolName,"Default Timeline","play",function(sym,e){sym.Stop_This_Train.play();});
 //Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${bg1_2}","touchend",function(sym,e){sym.play(0);});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text8}","touchend",function(sym,e){sym.play(0);});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text5}","swiperight",function(sym,e){sym.playReverse();});
+//Edge binding end
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",20500,function(sym,e){sym.stop();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text4}","swipeleft",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text5}","swipeleft",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text4}","swiperight",function(sym,e){sym.playReverse();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text6}","swipeleft",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${Text6}","swiperight",function(sym,e){sym.playReverse();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${skyline_still}","swipeleft",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${skyline_still}","swiperight",function(sym,e){sym.playReverse();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${end_}","swipeleft",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${end_}","swiperight",function(sym,e){sym.playReverse();});
+//Edge binding end
 })("stage");
 //Edge symbol end:'stage'
 
